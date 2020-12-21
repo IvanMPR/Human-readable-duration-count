@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Seconds Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <a
+          href="https://www.codewars.com/kata/52742f58faf5485cae000b9a/train/javascript"
+          target="_blank"
+          ><h1>Human Readable Duration Format</h1>
+        </a>
+        <p class="info">More info <i class="fas fa-info-circle"></i></p>
+        <div class="modal-bg hidden">
+          <div class="modal-p hidden">
+            <p>
+              This is the challenge I encountered on Codewars. Click on the
+              heading element on the top of the page for more information. User
+              is required to enter some random number of seconds, and the
+              program will return a string looking like: ' 3 years, 191 days, 17
+              hours and 21 minutes '. For the purpose of this task, a year is
+              365 days long. The output string is a combination of ' years ', '
+              days ', ' hours ', ' minutes ', and ' seconds '.
+            </p>
+            <button class="btn close">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="inputs">
+        <!-- <label for="input" id="label" class="hidden"
+          >Enter Number of Seconds</label
+        > -->
+        <input
+          type="tel"
+          name="input"
+          id="inp"
+          maxlength="28"
+          placeholder="Enter number of seconds"
+        />
+        <button id="btn">Convert</button>
+      </div>
+      <div class="output">Your output will be displayed here...</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

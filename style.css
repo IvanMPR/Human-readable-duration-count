@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+  line-height: 1.5;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  width: 55%;
+  margin: auto;
+}
+
+.title p.info {
+  cursor: pointer;
+  color: lightseagreen;
+  display: inline;
+}
+
+.title p.info:hover {
+  text-decoration: underline;
+}
+
+.modal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.8);
+  z-index: 0;
+}
+
+.modal-p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  padding: 0.5vw;
+  z-index: 1;
+}
+
+.modal-p p {
+  font-size: 1.2vw;
+  color: #333;
+  padding: 1vw 0.5vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding: 0.5vw;
+  font-size: 1.8vw;
+  color: lightseagreen;
+}
+
+p {
+  font-size: 1vw;
+  padding: 0.3vw;
+}
+
+.inputs {
+  margin: 1vw auto 0;
+  width: 100%;
+  height: 20%;
+}
+
+/* label {
+  color: lightseagreen;
+  display: block;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+} */
+
+input {
+  width: 55%;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+input::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+button {
+  display: block;
+  padding: 0.5vw 2vw;
+  text-transform: uppercase;
+  margin: 1.5vw auto;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lightseagreen;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+
+.output {
+  width: 55%;
+  height: 20%;
+  background: white;
+  border: 1px solid #333;
+  margin: auto;
+  padding: 1vw;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #ccc;
+}
